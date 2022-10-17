@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  mucho:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    working_dir: /home/app
+    environment:
+      - NAME=bob
+    ports: 
+      - '8822:8080'
